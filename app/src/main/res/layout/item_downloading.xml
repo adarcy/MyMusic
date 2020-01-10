@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_song_height"
+        android:layout_marginLeft="@dimen/button_padding"
+        android:layout_marginRight="@dimen/button_padding"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            tools:text="这是歌曲名称" />
+
+        <LinearLayout
+            android:id="@+id/ll_downloading_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_icon_padding"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ProgressBar
+                android:id="@+id/pb"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="100"
+                android:maxHeight="@dimen/music_seek_bar_height"
+                android:minHeight="@dimen/music_seek_bar_height"
+                android:progressDrawable="@drawable/shape_music_seek_bar" />
+
+            <TextView
+                android:id="@+id/tv_download_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_icon_padding"
+                android:layout_weight="1"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/text_small"
+                tools:text="@string/download_progress" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pause_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_icon_padding"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_small"
+            android:visibility="gone"
+            tools:text="@string/click_download" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:src="@drawable/ic_music_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

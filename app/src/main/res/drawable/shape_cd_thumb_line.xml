@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--45,左至右颜色渐变-->
+    <gradient
+        android:angle="45"
+        android:endColor="@android:color/transparent"
+        android:centerColor="@color/thumb_bg_line"
+        android:startColor="@android:color/transparent" />
+</shape>

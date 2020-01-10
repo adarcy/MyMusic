@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_play_small_container"
+    android:visibility="visible"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/play_controller_margin"
+
+        android:paddingLeft="@dimen/play_controller_margin"
+        android:paddingTop="@dimen/play_controller_margin">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="@dimen/radius"
+            app:cardElevation="@dimen/elevation">
+
+            <ImageView
+                android:id="@+id/iv_icon_small_controller"
+                android:layout_width="@dimen/album_small_width"
+                android:layout_height="@dimen/album_small_width"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cd_bg" />
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/button_padding"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="@dimen/text_large"
+                android:id="@+id/tv_title_small_controller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/text"
+                tools:text="这是歌曲名称" />
+
+            <com.ixuea.courses.mymusic.view.LyricSingleLineView
+                android:id="@+id/tv_info_small_controller"
+                android:layout_marginTop="@dimen/item_icon_padding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lyric_small_height" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_play_small_controller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_music_small_play" />
+
+        <ImageView
+            android:id="@+id/iv_next_small_controller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_music_next_small" />
+
+        <ImageView
+            android:id="@+id/iv_play_list_small_controller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_music_playlist_small" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/shape_music_seek_bar"
+        android:id="@+id/pb_progress_small"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_seek_bar_height" />
+
+</LinearLayout>

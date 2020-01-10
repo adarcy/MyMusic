@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.badu.and.roid.me.app.activity.RegisterActivity">
+
+    <LinearLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:background="@color/black"
+            android:id="@+id/video_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/video_height">
+
+            <VideoView
+                android:id="@+id/vv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/video_touch_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"></RelativeLayout>
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/abl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="@android:color/transparent"
+                app:elevation="0dp">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <LinearLayout
+                android:id="@+id/bottom_controller_container"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/button_padding"
+                android:layout_marginBottom="@dimen/button_padding"
+                android:layout_marginRight="@dimen/button_padding"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:textColor="@color/white"
+                    android:text="20:20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:textColor="@color/text_grey"
+                    android:text="/20:20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <SeekBar
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/sb_progress"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="@dimen/music_seek_bar_height"
+                    android:minHeight="@dimen/music_seek_bar_height"
+                    android:progressDrawable="@drawable/shape_music_seek_bar"
+                    android:textColor="@color/music_text"
+                    android:textSize="@dimen/music_text" />
+
+                <ImageView
+                    android:id="@+id/iv_screen"
+                    android:src="@drawable/ic_full_screen"
+                    android:layout_width="@dimen/video_full_screen"
+                    android:layout_height="@dimen/video_full_screen" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_video_play"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_video_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+        </com.github.jdsjlzx.recyclerview.LRecyclerView>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

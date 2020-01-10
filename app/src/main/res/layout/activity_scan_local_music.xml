@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/tool_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/button_margin_left"
+        android:layout_marginRight="@dimen/button_margin_left"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_san_music_container"
+            android:layout_marginBottom="@dimen/button_margin_top"
+            android:ellipsize="start"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:id="@+id/rl_san_music_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_scan_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scan_local_music" />
+
+            <ImageView
+                android:id="@+id/iv_scan_music_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/scan_line"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_scan_music_zoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/scan_music_zoom" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_scan_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_san_music_container"
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:background="@drawable/selector_button_reverse"
+            android:text="@string/start_scan"
+            android:textColor="@drawable/selector_text_reverse" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

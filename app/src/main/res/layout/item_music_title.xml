@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/divider_color"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/button_padding"
+    android:paddingRight="@dimen/button_padding"
+    android:layout_height="@dimen/item_music_title_height">
+
+
+    <!--默认的满足需求，可以不同自定义-->
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_status"
+        android:src="@drawable/ic_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:id="@+id/tv_title"
+        android:layout_marginLeft="@dimen/item_icon_padding"
+        android:text="创建的歌单(2)"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_more"
+        android:src="@drawable/ic_music_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="cn.badu.and.roid.me.app.activity.AlbumImageActivity">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/pv"
+        android:transitionName="banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <Button
+        android:layout_marginBottom="@dimen/activity_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bt_save"
+        android:text="保存图片"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_button_white"
+        android:layout_width="80dp"
+        android:layout_height="30dp" />
+</RelativeLayout>

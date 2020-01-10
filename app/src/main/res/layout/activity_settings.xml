@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/tool_bar" />
+
+    <LinearLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout style="@style/ItemContainer">
+
+            <ImageView
+                style="@style/ItemIcon"
+                android:src="@drawable/ic_phone" />
+
+            <TextView
+                style="@style/ItemText"
+                android:text="我的消息" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ItemContainer">
+
+            <ImageView
+                style="@style/ItemIcon"
+                android:src="@drawable/ic_phone" />
+
+            <TextView
+                style="@style/ItemText"
+                android:text="VIP会员" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ItemContainer">
+
+            <ImageView
+                style="@style/ItemIcon"
+                android:src="@drawable/ic_phone" />
+
+            <TextView
+                style="@style/ItemText"
+                android:text="商城" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ItemContainer">
+
+            <ImageView
+                style="@style/ItemIcon"
+                android:src="@drawable/ic_phone" />
+
+            <TextView
+                style="@style/ItemText"
+                android:text="在线听歌免流量" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_large" />
+
+
+        <LinearLayout style="@style/ItemContainer">
+
+            <ImageView
+                style="@style/ItemIcon"
+                android:src="@drawable/ic_phone" />
+
+            <TextView
+                style="@style/ItemText"
+                android:text="我的好友" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ItemContainer">
+
+            <ImageView
+                style="@style/ItemIcon"
+                android:src="@drawable/ic_phone" />
+
+            <TextView
+                style="@style/ItemText"
+                android:text="附近的人" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_marginRight="@dimen/activity_margin"
+            android:id="@+id/bt_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/selector_button_reverse"
+            android:text="@string/logout"
+            android:textColor="@drawable/selector_text_reverse" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

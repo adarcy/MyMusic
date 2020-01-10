@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ixuea.courses.mymusic.activity.RegisterActivity">
+
+    <include layout="@layout/tool_bar" />
+
+    <LinearLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/activity_margin">
+
+
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/et_phone"
+                android:minEms="11"
+                android:maxLength="11"
+                android:maxEms="11"
+                android:hint="@string/enter_phone_number"
+                android:inputType="phone"/>
+
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/et_password"
+                android:minEms="6"
+                android:inputType="textPassword"
+                android:hint="设置登陆密码，不少于6位" />
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/selector_button_reverse"
+                android:text="@string/login"
+                android:textColor="@drawable/selector_text_reverse" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

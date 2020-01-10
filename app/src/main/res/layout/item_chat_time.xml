@@ -1,0 +1,13 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_time"
+    android:visibility="gone"
+    android:text="2017-19-10 10:20"
+    android:layout_marginTop="@dimen/button_padding"
+    android:layout_marginBottom="@dimen/button_padding"
+    android:gravity="center"
+    android:textSize="@dimen/text_small"
+    android:textColor="@color/text_grey"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</TextView>

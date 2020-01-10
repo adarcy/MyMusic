@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="@dimen/button_padding">
+
+
+    <ImageView
+        android:src="@drawable/ic_logo"
+        android:layout_width="@dimen/share_lyric_logo_width"
+        android:layout_height="@dimen/share_lyric_logo_width" />
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/item_icon_padding"
+        android:text="来自我的云音乐.歌词分享"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/text_small"
+        android:layout_height="wrap_content" />
+
+    <!--这是使用的二维码是 爱学啊官网地址，当然你可以集成二维码框框动态生成每首音乐的地址-->
+    <ImageView
+        android:src="@drawable/ixuea_web_qrcode"
+        android:layout_width="@dimen/share_lyric_qrcode_width"
+        android:layout_height="@dimen/share_lyric_qrcode_width" />
+</LinearLayout>

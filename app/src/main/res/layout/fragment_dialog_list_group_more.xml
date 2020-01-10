@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/divider_small" />
+
+    <LinearLayout
+        android:id="@+id/ll_create_list"
+        style="@style/ItemEntryContainer">
+
+
+        <ImageView
+            android:src="@drawable/ic_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/ItemEntryTitle"
+            android:text="@string/create_list" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_small" />
+
+    <LinearLayout
+        android:id="@+id/ll_list_manager"
+        style="@style/ItemEntryContainer">
+
+
+        <ImageView
+            android:src="@drawable/ic_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/ItemEntryTitle"
+            android:text="@string/list_manager" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

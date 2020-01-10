@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!--9patch图片：左边上边控制拉伸范围（可以有间歇），右边下边控制内容范围（不可以有间歇）-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_chat_time"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/button_padding">
+
+        <TextView
+            android:layout_toLeftOf="@+id/iv_avatar"
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_chat_right"
+            android:gravity="center"
+            android:lineSpacingMultiplier="@dimen/line_space_multi"
+            android:textColor="@color/white"
+            tools:text="这是消息内容," />
+
+        <ImageView
+            android:layout_marginLeft="@dimen/button_padding"
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/item_comment_avatar_width"
+            android:layout_height="@dimen/item_comment_avatar_width"
+            tools:src="@drawable/default_avatar" />
+
+    </RelativeLayout>
+</LinearLayout>

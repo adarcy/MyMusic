@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        style="@style/ItemEntryContainer">
+
+        <TextView
+            android:id="@+id/tv_song"
+            style="@style/ItemEntryTitle"
+            android:text="@string/song_detail" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_small" />
+
+    <LinearLayout
+        android:id="@+id/ll_next_play"
+        style="@style/ItemEntryContainer">
+
+
+        <ImageView
+            android:src="@drawable/ic_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/ItemEntryTitle"
+            android:text="@string/next_play" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_small" />
+
+    <LinearLayout
+        android:id="@+id/ll_collection"
+        style="@style/ItemEntryContainer">
+
+
+        <ImageView
+            android:src="@drawable/ic_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/ItemEntryTitle"
+            android:text="@string/collection_to_list" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_small" />
+
+    <LinearLayout
+        android:id="@+id/ll_download"
+        style="@style/ItemEntryContainer">
+
+
+        <ImageView
+            android:src="@drawable/ic_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/ItemEntryTitle"
+            android:text="@string/download" />
+
+    </LinearLayout>
+    <include layout="@layout/divider_small" />
+
+    <LinearLayout
+        android:id="@+id/ll_comment"
+        style="@style/ItemEntryContainer">
+
+
+        <ImageView
+            android:src="@drawable/ic_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_comment_count"
+            style="@style/ItemEntryTitle"
+            android:text="@string/comment_count" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_small" />
+
+    <LinearLayout
+        android:id="@+id/ll_share"
+        style="@style/ItemEntryContainer">
+
+
+        <ImageView
+            android:src="@drawable/ic_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/ItemEntryTitle"
+            android:text="@string/share" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_small" />
+
+    <LinearLayout
+        android:id="@+id/ll_song_artist"
+        style="@style/ItemEntryContainer">
+
+
+        <ImageView
+            android:src="@drawable/ic_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_artist"
+            style="@style/ItemEntryTitle"
+            android:text="@string/artist" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_small" />
+
+    <LinearLayout
+        android:id="@+id/ll_song_album"
+        style="@style/ItemEntryContainer">
+
+
+        <ImageView
+            android:src="@drawable/ic_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_album"
+            style="@style/ItemEntryTitle"
+            android:text="@string/album" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_small" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_delete"
+        style="@style/ItemEntryContainer">
+
+
+        <ImageView
+            android:src="@drawable/ic_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/ItemEntryTitle"
+            android:text="@string/delete" />
+
+    </LinearLayout>
+
+</LinearLayout>

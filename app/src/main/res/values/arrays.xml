@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="comment_more">
+        <item>回复评论</item>
+        <item>分享评论</item>
+        <item>复制评论</item>
+        <item>举报评论</item>
+    </string-array>
+</resources>
